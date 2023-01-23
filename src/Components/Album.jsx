@@ -35,9 +35,6 @@ export default function Album() {
       <AppBar position="relative" sx={{ backgroundColor: 'white', color: '#00000' }}>
         <Toolbar>
           <img src="./chikoo.png" style={{ width: '100px' }} />
-          <Typography variant="h6" color={primaryColor} noWrap>
-            Chikoo
-          </Typography>
         </Toolbar>
       </AppBar>
       <main>
