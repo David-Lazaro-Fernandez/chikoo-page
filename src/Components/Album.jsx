@@ -8,6 +8,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
+import Button from '@mui/material/Button';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 function Copyright() {
@@ -23,7 +24,6 @@ function Copyright() {
   );
 }
 
-const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 const theme = createTheme();
 const primaryColor = "#8957fe"
@@ -67,7 +67,7 @@ export default function Album() {
               Your preconsultant companion
             </Typography>
             <Stack
-              sx={{ pt: 4 }}
+              sx={{ pt: 4, m: 3 }}
               direction="row"
               spacing={2}
               justifyContent="center"
@@ -93,6 +93,16 @@ export default function Album() {
                   }
                 }} />
             </Stack>
+            <Button
+              variant="contained"
+              disableElevation
+              sx={{
+                bgcolor: `${primaryColor}`,
+                "&:hover": {
+                  backgroundColor:`#643fba`, 
+                }
+              }}
+            > Search Patient</Button>
           </Container>
         </Box>
 
